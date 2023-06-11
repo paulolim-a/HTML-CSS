@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+*{ /*configurações globiais */
+    font-family: Arial, Helvetica, sans-serif; /*Todo o site usara esse tipo de fonte*/
+    height: 100%; /*tamanho será aumentado em 100%, para não bugar o degradê*/
+}
+
+body{
+    height: auto; /*Com o height nas configurações globais podem bugar o conteúdo, arrumamos aqui também para 'auto'*/
+    background-image: linear-gradient(to bottom, #f1d8c9, #f2c3a7);
+    
+    /*background-attachment: fixed; Caso o degradê de bug*/
+}
+
+main{
+
+    background-color: rgb(239, 239, 239);
+    border-radius: 20px; /*Arredonda as bordas da 'caixa' do do main*/
+    box-shadow: 5px 5px 15px rgba(161, 128, 110, 0.545); /*Coloca uma sombra (1- quanto a sombra anda pro lado, 2- quanto anda pra baixo, 3- quanto a sombra vai espalhar e 4- a cor da sombra)*/
+    width: 600px; /*cria uma 'caixa' com o tamanho especificado que irá conter o conteúdo de main*/
+    padding: 10px; /*Cria um espaço do conteúdo para a margem da 'caixa' criada*/
+    margin:auto; /*Coloca o conteúdo no centro*/
+}
+
+h1{
+    color: #f39209;
+    text-align: center; /*Alinha o texto no centro*/
+    text-shadow: 1px 1px 1px black;/*Sombra na letra, no caso no título h1*/
+}
+
+h2{
+    color: #125189;
+}
+
+p{ /* Todos os pararáfos ficaram justificados */
+    text-align: justify;
+}

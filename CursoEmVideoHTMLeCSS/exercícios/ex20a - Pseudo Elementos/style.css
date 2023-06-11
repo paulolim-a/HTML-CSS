@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    color:green;
+    text-decoration: none; /*Tira os sublinhados das palavras*/
+}
+
+a:visited{/*Essa pseudo classe indica que 
+            os link já visitados vão ter a cor vermelho  escuro */
+    color: darkred;
+}
+
+a:hover{/*Indica que quando passar  mouse sobre o link, ele ficará sublinhado*/
+    color:blue;
+    text-decoration: underline;
+}
+
+a:active{/*Indica que enquanto o link estiver sedndo "segurado"
+            ele ficará na cor amarel*/
+    color:yellow;
+}
+
+a::before{/*indica que antes do que está escrito de 'a href'
+            vai aparecer o que está em 'content'*/
+    content: '⇥ '; /*conteúdo*/
+    font-size: 20px;
+    color: darkgray;
+}
+
+a::after{
+    content: ' ⇤';
+    font-size: 20px;
+    color:darkgray;
+}

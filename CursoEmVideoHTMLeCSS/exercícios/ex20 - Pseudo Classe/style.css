@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+div#d1,#d2,#d3{
+    display: inline-block; /*Coloca todas as  dis na mesma linha*/
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid black; /* Cria uma borda entorno da div*/
+    height: 200px;
+    width: 200px;
+}
+
+div:hover{
+
+    color: red;
+
+}
+
+div > p{
+
+    display: none;
+}
+
+div:hover > p{
+    display: block;
+    color: black;
+}
