@@ -1,7 +1,17 @@
 @charset "UTF-8";
 
+body{
+    background-color: lightgray;
+}
 
+.bloco{
+    background-image: url(../imagens/wallpaper003.jpg);
+    height: 200px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
 
+}
 
 div.quadrado{
     display: inline-block;
@@ -12,6 +22,25 @@ div.quadrado{
     background-color: lightgray;
     border-radius: 15px;
 }
+
+#i1{
+    background-position: left top;
+}
+
+#i2{
+    background-position: left center;
+}
+
+#i3{
+    background-position: right bottom;
+}
+
+#i4{
+    background-position: center center;
+}
+
+
+
 
 #q1{
     background-color: red;
