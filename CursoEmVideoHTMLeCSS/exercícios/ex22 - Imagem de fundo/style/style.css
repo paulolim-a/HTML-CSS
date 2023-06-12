@@ -4,7 +4,10 @@ body{
     background-image: url(../imagens/wallpaper002.jpg);
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+
+    /* background: black url('../imagens/wallpaper002.jpg') center center/cover no-repeat fixed; --> Shorthand */
 }
 
 .bloco{
@@ -18,7 +21,14 @@ body{
 
 main{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
+    background-color: whitesmoke;
+    max-width: 700px;
+    margin: auto;
+    font-size: 0.8em;
+    padding: 5px;
+    border-radius: 15px;
+    text-indent: 30px;
+    text-align: justify;
 }
 
 div.quadrado{
