@@ -71,3 +71,31 @@ div.quadrado{
 #q3{
     background-image: linear-gradient(to bottom, #39324B 20%, transparent);
 }
+
+#container{
+    height: 500px;
+    background-color: rgba(255, 182, 193, 0.905);
+    padding: 20px;
+    position: relative;
+    background-image: url('../imagens/target001.png');
+    background: url('../imagens/target001.png') center center/cover no-repeat;
+    
+
+}
+
+#conteudo{
+    height: 200px;
+    width: 400px;
+    background-color: lightyellow;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    /* Forma Atual: */
+    transform: translate(-50%, -50%);
+
+    /* Forma Antiga:
+    margin-top: -100px;
+    margin-left: -200px; */
+
+}
