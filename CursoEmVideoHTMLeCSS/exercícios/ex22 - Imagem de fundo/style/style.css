@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+
+
+
+div.quadrado{
+    display: inline-block;
+    border: 2px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 3px;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+
+#q1{
+    background-color: red;
+}
+
+#q2{
+    background-image: url('../imagens/pattern001.png');
+}
+
+#q3{
+    background-image: linear-gradient(to bottom, #39324B 20%, transparent);
+}
