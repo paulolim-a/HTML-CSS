@@ -36,8 +36,8 @@ header{
 header > h1{
     font-variant: small-caps;
     font-family: var(--fontMinha);
-    font-size: 4vw;
-    /*   */
+    /* font-size: 4vw; */
+    font-size: clamp(2em, 4vw, 5vw);
     
 }
 
@@ -51,9 +51,10 @@ a:hover{
 }
 
 pre{
+    padding-left: 10px;
     white-space: pre-line;
     font-family: var(--fontConteudo);
-    font-size: 2.6vw;
+    font-size: clamp(1em, 1.6vw, 2.6vw);
 }
 
 section{
@@ -70,14 +71,26 @@ section.normal{
 }
 
 section.imagem{
-    background-color: rgb(60, 52, 52);
-    color: white;
+    background-size: cover;
+    background-position: right center;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.467);
+    background-attachment: fixed;
+}
 
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+}
+
+section#img02{
+    background-image: url(../imagens/background002.jpg);
 }
 
 section.imagem > pre{
-    background-color: rgb(26, 24, 24);
-    width: 400px;
+    color: white;
+    background-color: rgba(26, 24, 24, 0.616);
+    width: 300px;
+    text-shadow: 2px 1px 0px black;
+    border-radius: 10px;
 }
 
 footer{
@@ -85,5 +98,6 @@ footer{
     padding: 3px;
     text-align: right;
     font-size: 0.85em;
+    font-size: clamp(1vw, 0.85em, 2vw);
 
 }
