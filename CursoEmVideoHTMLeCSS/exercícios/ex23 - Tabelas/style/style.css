@@ -1,9 +1,14 @@
 @charset "UTF-8";
 
+
+body{
+    background-color: rgb(138, 129, 118);
+}
 table{
     width: 600px;
     border-collapse: collapse;
     text-align: center;
+    position: relative;
 }
 
 caption{
@@ -15,16 +20,24 @@ caption{
     border: 1px solid black;
     border-bottom: 0px;
 }
+
 thead, tfoot{
     background-color: lightblue;
-    
+}
 
+thead {
+    position: sticky;
+    top: -1px;
 }
 
 td, th{
     border: 1px solid black;
     padding: 5px;
 
+
+}
+tr:hover {
+    border: 2px solid rgb(23, 9, 226);
 }
 
 tbody > tr:nth-child(2n){
