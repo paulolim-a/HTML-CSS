@@ -12,11 +12,29 @@
             <label for="inome">Nome:</label>
             <input type="text" name="name" id="iname" required maxlength="30" placeholder="Informe o nome completo" autocomplete="name">
         </p>
+
         <p>
             <label for="imedia">Média:</label>
             <input type="number" name="media" id="imedia" required min="0" max="10"
-            placeholder="Nota de 0 a 10" step="0.5">
+            placeholder="0.0 a 10.0" step="0.1">
         </p>
+
+        <p>
+            <label for="iperido">Periodo Letivo:</label>
+            <input type="month" name="periodo" id="iperiodo" value="2023-06">
+
+        </p>
+
+        <p>
+            <label for="idia">Dia da Prova</label>
+            <input type="date" name="dia" id="idia" value="2023-06-16">
+        </p>
+
+        <p>
+            <label for="ihora">Horário da Prova</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
