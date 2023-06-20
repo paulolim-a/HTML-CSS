@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulários - Radio Button e CheckBox</title>
 </head>
+
 <body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="isexmas"><label for="isexmas">Masculino</label><br>
+            <input type="radio" name="sexo" id="isexfem"><label for="isexfem">Feminino</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"><label for="iesfut">Futebol</label> <br>
+            <input type="checkbox" name="esbas" id="iesbas"><label for="iesbas">Basquete</label> <br>
+            <input type="checkbox" name="espvol" id="iespvol"><label for="iespvol">Volêi</label> <br>
+            <input type="checkbox" name="espnat" id="iespnat"><label for="iespnat">Natação</label> <br>
+            <input type="checkbox" name="espten" id="iespten"><label for="iespten">Tênis</label> <br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Color</legend>
+            <label for="icolor">Cor:</label>
+            <input type="color" name="color" id="icolor" value="#ffffff">
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Nível de Satisfação</legend>
+            <label for="inivel">Nível</label>
+            <input type="range" name="nivel" id="inivel" min="1" max="4">
+        </fieldset>
+
+        <p>
+            <label for="ifile">Insira seu arquivo</label>
+            <input type="file" name="file" id="ifile">
+        </p>
+
+        <p>
+            <input type="submit" value="Enter">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
     
 </body>
 </html>
