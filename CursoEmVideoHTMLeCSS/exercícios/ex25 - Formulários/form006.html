@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Exemplo de Formuário</h1>
+    <form action="" method="post">
+        <div>
+            <label for="iest"></label>
+            <select name="est" id="iest" required>
+
+                <div>
+                    <option disabled selected>--- Escolha ---</option>
+                    <optgroup label="Região Nordeste">
+                        <option value="MA">Maranhão</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                    </optgroup>
+                    <optgroup label="Região Sudeste">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="ES">Espírito Santo</option>
+                    </optgroup>
+                    <optgroup label="Região Sul">
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                </div>
+
+                <div>
+                    
+                    <label for="iprof">Profissão:</label>
+                    <input type="text" name="prof" id="iprof" list="listProf" maxlength="50">
+
+                    <datalist id="listProf">
+                        <option value="ADM">Administrador</option>
+                        <option value="DEV">Desenvolvedor</option>
+                        <option value="COZ">Cozinheiro</option>
+                        <option value="SLA">Sei Lá</option>
+                    </datalist>
+                </div>
+
+                <div>
+                    <label for="imsg">Mensagem: </label>
+                    <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Coloque sua mensagem aquiS"></textarea>
+                </div>
+
+            </select>
+        </div>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+
+</html>
