@@ -1,0 +1,20 @@
+@charset "UF-8";
+
+
+@media screen and (min-width: 769px) {
+    span#menuBurguer{
+        display: none;
+    }
+
+    header > nav{
+        display: block;
+    }
+
+    nav li{
+        display: inline-block;
+    }
+
+    main{
+        width: 768px;
+    }
+}

@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/*
+    Paleta de cores
+    Verde: #49a09d
+    Lilás: #5f2c82
+*/
+
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-image: linear-gradient(to bottom right, purple, rgb(129, 28, 129), rgb(124, 61, 124), white);
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section#login{
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 20px;
+    overflow: hidden; /* tudo o que estiver 
+                        fora da borda é escondido */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.385);
+}
+
+section#login > div#imglogin{
+    background: url(../images/metal.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: left bottom;
+}
+

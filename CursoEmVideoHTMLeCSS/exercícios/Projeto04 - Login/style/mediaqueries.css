@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@media (min-width: 768px){
+
+    section#login{
+        width: 90%;
+
+    }
+    
+}
