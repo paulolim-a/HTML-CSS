@@ -1,10 +1,46 @@
 @charset "UTF-8";
 
-@media (min-width: 768px){
+@media (min-width: 768px) and (max-width: 992px){
 
     section#login{
-        width: 90%;
+        width: 60vw;
 
     }
+
+    section#login > div#imglogin{
+        float:left;
+        width: 30%;
+        height: 100%;
+    }
     
+    section#lodin > div#formlogin{
+        float: right;
+        width: 70%;
+    }
+}
+
+@media  (min-width:993px) {
+
+    section#login {
+        width: 1024px;
+        height: 350px;
+    }
+
+    section#login > div#imglogin{
+        float: right;
+        width: 50%;
+        height: 100%;
+    }
+
+    section#lodin > div#formlogin{
+        float: left;
+        width: 50%;
+        height: 100%;
+    }
+
+    div#formlogin > h1{
+        font-size: 2em; 
+    }
+
+
 }

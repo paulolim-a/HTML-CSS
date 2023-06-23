@@ -20,8 +20,20 @@
                 <p>
                     Faça Login ou se cadastre para acessar sua conta!
                 </p>
-                <form action="login.pgp" method="post">
-                    <label for=""></label>
+
+                <form action="login.pgp" method="post" autocomplete="on">
+
+                    <div class="campo">
+                        <label for="ilogin">Login: </label>
+                        <input type="email" name="login" id="ilodin" placeholder="Insira seu e-mail" autocomplete="email" required maxlength="60">
+                    </div>
+
+                    <div class="campo">
+                        <label for="ipassw">Senha: </label>
+                        <input type="password" name="passw" id="ipassw" placeholder="Insira sua senha" required minlength="4">
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <button>Esqueci a senha</button>
                 </form>
 
             </div>
