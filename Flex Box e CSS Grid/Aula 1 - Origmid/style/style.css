@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap; /*Quando a tela for pequena o logo ficará fixo e os itens do menu irão para baixo dele*/
+    justify-content: space-between; /*Coloca espaço entre os elementos*/
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(56, 47, 47);
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px; /* separando os itens que compoem o menu */
+}
+
+.menu li a{
+    display: block; /* faz deles um bloco com margin */
+    padding: 10px;
+    background: tomato;
+}
+
+section.flex{
+    display: flex;
+    flex-wrap: wrap; /* indica para o pai que o filho 
+                        pode quebrar o tamanho */
+    max-width: 500px; /* indica o tamanho máximo da img */
+    margin: auto; /*  */
+}
+
+.flex >div{
+    flex: 1 1 200px;/* Indica que o tamanho minimo da imagem 
+                        é 200px se ele não conseguir ter 200px
+                        ele irá quebrar */
+    margin: 10px;
+    text-align: center;
+}
+

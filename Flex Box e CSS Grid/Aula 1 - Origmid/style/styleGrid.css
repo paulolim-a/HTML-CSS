@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 30px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap; /*Quando a tela for pequena o logo ficará fixo e os itens do menu irão para baixo dele*/
+    justify-content: space-between; /*Coloca espaço entre os elementos*/
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(56, 47, 47);
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px; /* separando os itens que compoem o menu */
+}
+
+.menu li a{
+    /* display: block; /* faz deles um bloco com margin */ 
+    padding: 10px;
+    background: tomato;
+}
+
+section.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* fr = unidade fracioal -- é possível indicar por rid-template-col: repeat(3,1fr)*/
+                                        /* indica que haverá três colunas no template */
+    max-width: 800px;
+    margin: auto;
+    grid-gap: 20px; /* especie de margin entre as imagens */
+    padding: 10px;
+}
+
+section.grid > div:nth-child(n+4){ /* as tags dessa seção serão aplicadas a partir do quarto filho */
+    display: grid; /* vai separar os dois itens dentro da div (img + legenda) */
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    align-items: center; /* alinha as imagens com a legenda */
+
+}
+
+section.grid > div.anuncio{
+    grid-column: 1; /* essa div sempre estará na primeira coluna */
+    grid-row: 2 / 5;
+    display: block;
+}
+
+/* Criando Responsividade */
+
+@media (max-width: 600px){
+    section.grid{
+        max-width: 550px;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    section.grid > div:nth-child(n+4){ /* as tags dessa seção serão aplicadas a partir do quarto filho */
+        display: block;
+    
+    }
+
+    section.grid > div.anuncio{
+        grid-column: 1;
+        grid-row: auto;
+        order: -1;
+    }
+}
